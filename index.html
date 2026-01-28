@@ -11,7 +11,7 @@
 
 <div class="container">
     <header class="main-header">
-        <h1 class="project-title">Priming: Compleción de raíces de palabras</h1>
+        <h1 class="project-title">Recuerdo con claves (raíces de palabras)</h1>
         <p class="author-info"><strong>Autora:</strong> María del Carmen Martín-Buro</p>
         <p class="contact-info"><strong>Contacto:</strong> <a href="mailto:carmen.martinburo@urjc.es">carmen.martinburo@urjc.es</a></p>
         
@@ -20,7 +20,7 @@
                 <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
             </a>
             <p>Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
-         Experimento basado en: Soler, M. J., Dasí, C., & Ruiz, J. C. (2015). Priming in word stem completion tasks: Comparison with previous results in word fragment completion tasks. Frontiers in psychology, 6, 1172.
+         Experimento basado en: Actualizar Paper
         </div>
     </header>
     <hr>
@@ -35,14 +35,14 @@
                     <tr>
                         <th>ID</th>
                         <th>PALABRA OBJETIVO</th>
-                        <th>ACIERTOS (1/0)</th>
+                        <th>¿COMPLETADA? (1/0)</th>
                         <th>CONDICIÓN</th>
                     </tr>
                 </thead>
                 <tbody id="tabla-items"></tbody>
             </table>
         </div>
-        <button class="btn-main" onclick="procesar()">Calcular Efecto de Priming</button>
+        <button class="btn-main" onclick="procesar()">Calcular Proporción Aciertos-Falsas Alarmas</button>
     </section>
 
     <section class="card" id="seccion-resultados" style="display: none;">
@@ -53,11 +53,11 @@
         <div class="stats-grid">
             <div class="stat-box primed">
                 <span class="stat-val" id="val-primed">0%</span>
-                <small>PALABRAS ESTUDIADAS (PRIMED)</small>
+                <small>PALABRAS ESTUDIADAS (Antiguas)</small>
             </div>
             <div class="stat-box baseline">
                 <span class="stat-val" id="val-nonprimed">0%</span>
-                <small>LÍNEA BASE (NON-PRIMED)</small>
+                <small>PALABRAS NO ESTUDIADAS (Nuevas)</small>
             </div>
         </div>
         <div class="chart-container">
